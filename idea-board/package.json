@@ -3,18 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "autoprefixer-stylus": "^0.14.0",
     "react": "16.4.0",
     "react-dom": "16.4.0",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "stylus": "^0.54.5"
   },
   "scripts": {
     "start": "react-scripts start",
+    "watch": "concurrently --names \"webpack, stylus\" --prefix name \"npm run start\" \"npm run styles:watch\"",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "coverage": "react-scripts test --env=jsdom --coverage",
+    "styles": "stylus -u autoprefixer-stylus ./src/css/style.styl -o ./src/css/style.css",
+    "styles:watch": "stylus -u autoprefixer-stylus -w ./src/css/style.styl -o ./src/css/style.css"
   },
   "devDependencies": {
+    "concurrently": "^4.0.1",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.1",
+    "prettier": "^1.14.3",
     "react-test-renderer": "16.4.0"
   }
 }

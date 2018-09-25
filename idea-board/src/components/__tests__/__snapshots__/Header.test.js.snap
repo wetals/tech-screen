@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders a snapshot properly 1`] = `
+<header
+  className="header"
+>
+  <h2>
+    Get inspired
+  </h2>
+  <div
+    className="sortBy"
+  >
+    <span
+      className="sortBy__label"
+    >
+      Sort by
+    </span>
+    <select
+      name="sortBy__dropdown"
+    >
+      <option
+        value="lastUpdated"
+      >
+        Last Updated
+      </option>
+      <option
+        value="alphabetically"
+      >
+        Alphabetically
+      </option>
+    </select>
+  </div>
+</header>
+`;

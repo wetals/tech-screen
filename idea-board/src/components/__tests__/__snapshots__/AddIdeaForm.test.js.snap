@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddIdeaForm component renders snapshot properly 1`] = `
+<form
+  className="idea"
+  onSubmit={[Function]}
+>
+  <div
+    className="field title"
+  >
+    <input
+      name="title"
+      onChange={[Function]}
+      placeholder="Title"
+      type="text"
+      value="test"
+    />
+  </div>
+  <div
+    className="field description"
+  >
+    <textarea
+      name="description"
+      onChange={[Function]}
+      placeholder="Description"
+      value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pretium venenatis luctus. Phasellus eu arcu euismod neque"
+    />
+    <span
+      className="counter"
+    >
+      15 characters remaining
+    </span>
+  </div>
+  <div
+    className="action-button"
+  >
+    <button
+      type="submit"
+    >
+      Add
+    </button>
+  </div>
+</form>
+`;

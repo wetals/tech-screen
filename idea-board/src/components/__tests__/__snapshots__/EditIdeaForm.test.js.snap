@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EditIdeaForm component renders snapshot properly 1`] = `
+<div
+  className="idea edit-mode "
+  onBlur={[Function]}
+  onFocus={[Function]}
+>
+  <div
+    className="field title"
+  >
+    <input
+      name="title"
+      onChange={[Function]}
+      type="text"
+      value="test"
+    />
+  </div>
+  <div
+    className="field description"
+  >
+    <textarea
+      name="description"
+      onChange={[Function]}
+      value="test"
+    />
+  </div>
+  <div
+    className="action-button"
+  >
+    <button
+      onClick={[Function]}
+    >
+      Remove
+    </button>
+    <div
+      className="idea_date"
+    >
+      <span>
+        2018 M09 24
+      </span>
+    </div>
+  </div>
+</div>
+`;
