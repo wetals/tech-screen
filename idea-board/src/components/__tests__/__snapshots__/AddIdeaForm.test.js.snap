@@ -9,6 +9,7 @@ exports[`AddIdeaForm component renders snapshot properly 1`] = `
     className="field title"
   >
     <input
+      autoFocus={true}
       name="title"
       onChange={[Function]}
       placeholder="Title"
