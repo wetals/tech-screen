@@ -19,6 +19,14 @@ const testData = {
 describe("EditIdeaForm component", () => {
   it("renders properly", () => {
     const wrapper = shallow(<EditIdeaForm {...testData} />);
+
+    const element = wrapper.find(".idea");
+
+    expect(element.length).toBe(1);
+    expect(element.find("input").get(0).props.value).toBe(testData.idea.title);
+    expect(element.find("textarea").get(0).props.value).toBe(
+      testData.idea.description
+    );
   });
 
   test("renders snapshot properly", () => {
